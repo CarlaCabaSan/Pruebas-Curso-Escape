@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room - Prueba 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escape Room - Prueba 1</h1>
+        <p>Completa la frase:</p>
+        <div class="puzzle-container">
+            <div class="input-group">
+                <label for="input1">Palabra 1</label>
+                <input type="text" id="input1" placeholder="Introduce la palabra" maxlength="3">
+            </div>
+            <div class="input-group">
+                <label for="input2">Palabra 2</label>
+                <input type="text" id="input2" placeholder="Introduce la palabra" maxlength="8">
+            </div>
+        </div>
+        <button id="verificar">Verificar respuesta</button>
+        <div id="success-popup" class="popup">
+            <div class="popup-content">
+                <h2 class="text-green-600">Enhorabuena!</h2>
+                <p>Pasas a la siguiente prueba.</p>
+                <button id="next-level" class="popup-button">Siguiente Prueba</button>
+            </div>
+        </div>
+        <div id="error-popup" class="popup">
+            <div class="popup-content">
+                <h2 class="text-red-600">Vuelve a intentarlo!</h2>
+                <p>Debes acertar todas para pasar a la siguiente prueba.</p>
+                <button id="close-error" class="popup-button">Cerrar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
